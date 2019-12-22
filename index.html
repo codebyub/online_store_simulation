@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep internetowy</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+    <div id="header">
+        <div class="navi"><a href="index.html">Sklep</a></div>
+        <div class="navi"><a href="index.html">Dostawa</a></div>
+        <div class="navi"><a href="index.html">Rejestracja</a></div>
+    </div>
+
+    <div class="shopping">
+        <div id="counter"></div>
+        <div id="items">
+            <div class="item-chart">
+                <img src="img/piwko.jpg" alt="Mocny Full">
+                <p class="item-name">Mocny Full</p>
+                <div class="break"></div>
+                <p class="unit-price">0.99</p>
+                <button class="adder">Dodaj</button>
+            </div>
+            <div class="item-chart">
+
+                <img src="img/piwko.jpg" alt="Piwo">
+                <p class="item-name">Piwo</p>
+                <div class="break"></div>
+                <p class="unit-price">1.99</p>
+                <button id="add-1" class="adder">Dodaj</button>
+            </div>
+            <div class="item-chart">
+                <img src="img/piwko.jpg" alt="Piwko">
+                <p class="item-name">Piwko</p>
+                <div class="break"></div>
+                <p class="unit-price">2.99</p>
+                <button class="adder">Dodaj</button>
+            </div>
+
+            <div class="item-chart">
+                <img src="img/piwko.jpg" alt="Piwerko">
+                <p class="item-name">Piwerko</p>
+                <div class="break"></div>
+                <p class="unit-price">3.99</p>
+                <button class="adder">Dodaj</button>
+            </div>
+            <div class="item-chart">
+                <img src="img/piwko.jpg" alt="Jasne pełne">
+                <p class="item-name">Jasne pełne</p>
+                <div class="break"></div>
+                <p class="unit-price">4.99</p>
+                <button class="adder">Dodaj</button>
+            </div>
+            <div class="item-chart">
+                <img src="img/piwko.jpg" alt="Pils">
+                <p class="item-name">Pils</p>
+                <div class="break"></div>
+                <p class="unit-price">5.99</p>
+                <button class="adder">Dodaj</button>
+            </div>
+            <div class="item-chart">
+                <img src="img/piwko.jpg" alt="Porter">
+                <p class="item-name">Porter</p>
+                <div class="break"></div>
+                <p class="unit-price">6.99</p>
+                <button class="adder">Dodaj</button>
+            </div>
+            <div class="item-chart">
+                <img src="img/piwko.jpg" alt="Pszeniczne piwo">
+                <p class="item-name">Pszeniczne</p>
+                <div class="break"></div>
+                <p class="unit-price">7.99</p>
+                <button class="adder">Dodaj</button>
+            </div>
+            <div class="item-chart">
+                <img src="img/piwko.jpg" alt="IPA">
+                <p class="item-name">IPA</p>
+                <div class="break"></div>
+                <p class="unit-price">8.99</p>
+                <button class="adder">Dodaj</button>
+            </div>
+            <div class="item-chart">
+                <img src="img/piwko.jpg" alt="ALE">
+                <p class="item-name">Ale</p>
+                <div class="break"></div>
+                <p class="unit-price">9.99</p>
+                <button class="adder">Dodaj</button>
+            </div>
+        </div>
+
+        <form id="basket" method="post" action="/test">
+            <input id="#purchase" type="submit" value="Kup">
+            <button id="erase" type="reset"><b>Wyczyść</b></button>
+            <p id="total-price" class="item-name"><b>Wartość koszyka: <span id="sum"></span> zł</b></p>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
